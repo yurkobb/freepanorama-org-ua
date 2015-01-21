@@ -1,0 +1,238 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/share/gems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Palette */
+/* Defaults */
+/* line 19, ../sass/screen.scss */
+body {
+  font-family: Tahoma, "DejaVu Sans Condensed", sans-serif;
+  font-size: 14pt;
+  text-align: center;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F.jpg/1280px-%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F.jpg") top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 28, ../sass/screen.scss */
+.no-background-size body {
+  background: #01a1df;
+}
+
+/* line 33, ../sass/screen.scss */
+h2 {
+  font-size: 165%;
+  padding: 0.5em 0;
+  color: white;
+}
+
+/* line 38, ../sass/screen.scss */
+p {
+  padding: 0.5em;
+  line-height: 125%;
+}
+
+/* line 43, ../sass/screen.scss */
+a {
+  color: #363377;
+  text-decoration: none;
+}
+
+/* Layout */
+/* line 52, ../sass/screen.scss */
+section > div, footer > div {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 57, ../sass/screen.scss */
+section, footer {
+  border-top: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+/* line 61, ../sass/screen.scss */
+#intro {
+  padding: 2em;
+  font-size: 18pt;
+  color: white;
+  min-height: 4em;
+}
+/* line 69, ../sass/screen.scss */
+#intro a {
+  color: white;
+}
+
+/* line 73, ../sass/screen.scss */
+#intro, #share {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+/* line 78, ../sass/screen.scss */
+#whatisit {
+  background: #86A136;
+  background: url('../img/icon1.png?1421628174') 0 -60px no-repeat rgba(134, 161, 54, 0.9);
+}
+
+/* line 83, ../sass/screen.scss */
+#nofop {
+  background: #812b69;
+  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(129, 43, 105, 0.9);
+}
+
+/* line 87, ../sass/screen.scss */
+#wepropose {
+  background: #59a136;
+  background: url('../img/icon3.png?1421628175') 0 -60px no-repeat rgba(89, 161, 54, 0.9);
+}
+
+/* line 92, ../sass/screen.scss */
+#why {
+  background: #7f7cc7;
+  background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(127, 124, 199, 0.9);
+}
+
+/* line 97, ../sass/screen.scss */
+#share {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-top: 3em;
+  padding-bottom: 300px;
+}
+/* line 101, ../sass/screen.scss */
+#share p {
+  padding: 1em 0 6em 0;
+}
+
+/* line 105, ../sass/screen.scss */
+footer {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-size: 9pt;
+  border-top: 2px solid gray;
+  padding: 2em 0.5em;
+}
+/* line 111, ../sass/screen.scss */
+footer ul {
+  text-align: left;
+  padding: 0 2em;
+  list-style: square;
+}
+/* line 116, ../sass/screen.scss */
+footer a {
+  color: #a29db8;
+}
+
+/* Modules */
+/* line 135, ../sass/screen.scss */
+#support {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0.2em;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  background: #86a136;
+  background: rgba(134, 161, 54, 0.8);
+  color: white;
+  position: relative;
+}
+/* line 131, ../sass/screen.scss */
+#support:hover {
+  background-color: rgba(163, 194, 72, 0.8);
+}
+/* line 137, ../sass/screen.scss */
+#share #support {
+  font-size: 175%;
+}
+
+/* line 141, ../sass/screen.scss */
+#share-link {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0.2em;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  background: #6e6abf;
+  background: rgba(110, 106, 191, 0.8);
+  color: white;
+  position: relative;
+}
+/* line 131, ../sass/screen.scss */
+#share-link:hover {
+  background-color: rgba(145, 142, 207, 0.8);
+}
+
+@media screen and (min-width: 480px) {
+  /* line 146, ../sass/screen.scss */
+  #hashtag {
+    position: absolute;
+    top: 0.3em;
+    right: 0.3em;
+  }
+}
