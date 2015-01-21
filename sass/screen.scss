@@ -14,6 +14,7 @@ $colorA: #86A136;
 $colorB: desaturate(lighten(#7F2A68, 15%), 15%);
 $colorC: lighten(#867FA2, 0.2);
 $colorD: #363377;
+$colorE: #01a1df;
 
 /* Defaults */
 body {
@@ -26,7 +27,7 @@ body {
 }
 .no-background-size body {
     // Без «розтягуваного» тла робимо просто колір
-    background: #01a1df;
+    background: $colorE;
 }
 
 h2 {
@@ -40,7 +41,8 @@ p {
 }
 
 a {
-    color: $colorD;
+    color: darken($colorE, 25%);
+    font-weight: bold;
     text-decoration: none;
 }
 
