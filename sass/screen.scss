@@ -21,7 +21,6 @@ body {
     font-size: 14pt;
     text-align: center;
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F.jpg/1280px-%D0%A1%D1%82%D0%B0%D1%80%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F.jpg') top center no-repeat;
-//    background-size: 100%;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -46,9 +45,6 @@ a {
 }
 
 /* Layout */
-body {
-//    background: url('http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Berlin_Panorama_%288324921866%29.jpg/1280px-Berlin_Panorama_%288324921866%29.jpg') center;
-}
 section > div, footer > div {
     max-width: 800px;
     margin-left: auto;
