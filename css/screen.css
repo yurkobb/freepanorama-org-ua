@@ -97,7 +97,7 @@ section > div, footer > div {
   margin-right: auto;
 }
 
-section, footer {
+section:not(#intro), footer {
   border-top: 3px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -161,6 +161,16 @@ footer a {
 }
 
 /* Modules */
+#langswitch {
+  padding-top: 0.5em;
+}
+#langswitch a {
+  font-size: 80%;
+  color: white;
+  padding: 0 0.5em;
+  font-weight: normal;
+}
+
 #support {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -197,9 +207,19 @@ footer a {
 }
 
 @media screen and (min-width: 480px) {
-  #hashtag {
+  #hashtag, #langswitch {
     position: absolute;
     top: 0.3em;
+  }
+
+  #hashtag {
     right: 0.3em;
+  }
+
+  #langswitch {
+    left: 0.3em;
+  }
+  #langswitch a {
+    padding: 0 0.25em;
   }
 }
