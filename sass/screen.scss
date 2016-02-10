@@ -150,6 +150,9 @@ footer {
 #share-link {
     @include button(transparentize(lighten($colorD, 25%), 0.2));
 }
+#photoflashmob {
+    @include button(transparentize(#d44, 0.2));
+}
 
 @media screen and (min-width: 480px) {
     #hashtag, #langswitch {

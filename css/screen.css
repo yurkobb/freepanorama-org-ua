@@ -207,6 +207,22 @@ footer a {
   background-color: rgba(145, 142, 207, 0.8);
 }
 
+#photoflashmob {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin: 0.2em;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  background: #dd4444;
+  background: rgba(221, 68, 68, 0.8);
+  color: white;
+  position: relative;
+}
+#photoflashmob:hover {
+  background-color: rgba(229, 111, 111, 0.8);
+}
+
 @media screen and (min-width: 480px) {
   #hashtag, #langswitch {
     position: absolute;
