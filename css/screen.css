@@ -171,7 +171,7 @@ footer a {
   font-weight: normal;
 }
 
-#support {
+.button {
   display: inline-block;
   padding: 0.5em 1.5em;
   margin: 0.2em;
@@ -183,9 +183,10 @@ footer a {
   color: white;
   position: relative;
 }
-#support:hover {
+.button:hover {
   background-color: rgba(163, 194, 72, 0.8);
 }
+
 #share #support {
   font-size: 175%;
 }

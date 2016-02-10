@@ -139,8 +139,10 @@ footer {
         background-color: lighten($buttonColor, 10%);
     }
 }
-#support {
+.button {
     @include button(transparentize($colorA, 0.2));
+}
+#support {
     #share & {
         font-size: 175%;
     }
