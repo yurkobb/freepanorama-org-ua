@@ -36,7 +36,7 @@ h2 {
     color: white;
 }
 p {
-    padding: 0.5em;
+    padding: 0.5em 0;
     line-height: 125%;
 }
 
@@ -51,6 +51,7 @@ section > div, footer > div {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 0.25em;
 }
 section:not(#intro), footer {
     border-top: 3px solid transparentize(white, 0.4);
@@ -91,6 +92,16 @@ $blocktransparency: 0.1;
     $why-color: lighten($colorD, 30%);
     background: $why-color; // For dumb browsers
     background: image-url('icon4.png') 0 -60px no-repeat transparentize($why-color, $blocktransparency);
+}
+#photoflashmob {
+    $flashmob-color: lighten($colorA, 15%);
+    background: $flashmob-color; // For dumb browsers
+    background: transparentize($flashmob-color, $blocktransparency);
+    /* When inside the popup */
+    .mfp-content & {
+        $flashmob-color: lighten($flashmob-color, 10%);
+        background: transparentize($flashmob-color, 0.15);
+    }
 }
 #share {
     background-color: transparentize(black, 0.75);
@@ -150,7 +161,7 @@ footer {
 #share-link {
     @include button(transparentize(lighten($colorD, 25%), 0.2));
 }
-#photoflashmob {
+.button.photoflashmob {
     @include button(transparentize(#d44, 0.2));
 }
 
@@ -168,4 +179,11 @@ footer {
             padding: 0 0.25em;
         }
     }
+}
+
+/* Plugins */
+/* Magnific Popup */
+@import url("magnific-popup.css");
+.mfp-content {
+    max-width: 1024px;
 }

@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("magnific-popup.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,7 +81,7 @@ h2 {
 }
 
 p {
-  padding: 0.5em;
+  padding: 0.5em 0;
   line-height: 125%;
 }
 
@@ -95,6 +96,7 @@ section > div, footer > div {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 0.25em;
 }
 
 section:not(#intro), footer {
@@ -133,6 +135,15 @@ section:not(#intro), footer {
 #why {
   background: #7f7cc7;
   background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(127, 124, 199, 0.9);
+}
+
+#photoflashmob {
+  background: #adc85b;
+  background: rgba(173, 200, 91, 0.9);
+  /* When inside the popup */
+}
+.mfp-content #photoflashmob {
+  background: rgba(192, 213, 130, 0.85);
 }
 
 #share {
@@ -207,7 +218,7 @@ footer a {
   background-color: rgba(145, 142, 207, 0.8);
 }
 
-#photoflashmob {
+.button.photoflashmob {
   display: inline-block;
   padding: 0.5em 1.5em;
   margin: 0.2em;
@@ -219,7 +230,7 @@ footer a {
   color: white;
   position: relative;
 }
-#photoflashmob:hover {
+.button.photoflashmob:hover {
   background-color: rgba(229, 111, 111, 0.8);
 }
 
@@ -239,4 +250,9 @@ footer a {
   #langswitch a {
     padding: 0 0.25em;
   }
+}
+/* Plugins */
+/* Magnific Popup */
+.mfp-content {
+  max-width: 1024px;
 }
