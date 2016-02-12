@@ -68,6 +68,13 @@ body {
   background: url('../img/1280px-Old-castle.jpg?1421800589') top center no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 .no-background-size body {
@@ -234,6 +241,14 @@ footer a {
   background-color: rgba(229, 111, 111, 0.8);
 }
 
+.illustration {
+  margin: 0.25em;
+  display: block;
+  -moz-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (min-width: 480px) {
   #hashtag, #langswitch {
     position: absolute;
@@ -249,6 +264,11 @@ footer a {
   }
   #langswitch a {
     padding: 0 0.25em;
+  }
+
+  .illustration {
+    float: right;
+    max-width: 300px;
   }
 }
 /* Plugins */
