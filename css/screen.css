@@ -133,8 +133,8 @@ section:not(#intro) p, footer p {
 }
 
 #nofop {
-  background: #a64f8f;
-  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(166, 79, 143, 0.9);
+  background: #b25d9b;
+  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(178, 93, 155, 0.9);
 }
 
 #wepropose {
