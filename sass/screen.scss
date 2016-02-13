@@ -10,9 +10,9 @@
 $browser-minimum-versions: (ie: "8");
 
 /* Palette */
-$colorA: #86A136;
-$colorB: desaturate(lighten(#7F2A68, 20%), 15%);
-$colorC: lighten(#867FA2, 0.2);
+$colorA: lighten(#86A136, 15%);
+$colorB: desaturate(lighten(#7F2A68, 30%), 15%);
+$colorC: lighten(#867FA2, 0.4);
 $colorD: #363377;
 $colorE: #01a1df;
 
@@ -91,17 +91,17 @@ $blocktransparency: 0.1;
     background: image-url('icon2.png') 0 -60px no-repeat transparentize($colorB, $blocktransparency);
 }
 #wepropose {
-    $wepropose-color: adjust-hue($colorA, 25deg);
+    $wepropose-color: $colorA;
     background: $wepropose-color; // For dumb browsers
     background: image-url('icon3.png') 0 -60px no-repeat transparentize($wepropose-color, $blocktransparency);
 }
 #why {
-    $why-color: lighten($colorD, 30%);
+    $why-color: lighten($colorD, 40%);
     background: $why-color; // For dumb browsers
     background: image-url('icon4.png') 0 -60px no-repeat transparentize($why-color, $blocktransparency);
 }
 #photoflashmob {
-    $flashmob-color: lighten($colorA, 15%);
+    $flashmob-color: $colorA;
     background: $flashmob-color; // For dumb browsers
     background: transparentize($flashmob-color, $blocktransparency);
     /* When inside the popup */

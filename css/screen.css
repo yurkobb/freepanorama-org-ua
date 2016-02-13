@@ -128,23 +128,23 @@ section:not(#intro) p, footer p {
 }
 
 #whatisit {
-  background: #86A136;
-  background: url('../img/icon1.png?1421628174') 0 -60px no-repeat rgba(134, 161, 54, 0.9);
+  background: #adc85b;
+  background: url('../img/icon1.png?1421628174') 0 -60px no-repeat rgba(173, 200, 91, 0.9);
 }
 
 #nofop {
-  background: #b25d9b;
-  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(178, 93, 155, 0.9);
+  background: #c280b0;
+  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(194, 128, 176, 0.9);
 }
 
 #wepropose {
-  background: #59a136;
-  background: url('../img/icon3.png?1421628175') 0 -60px no-repeat rgba(89, 161, 54, 0.9);
+  background: #adc85b;
+  background: url('../img/icon3.png?1421628175') 0 -60px no-repeat rgba(173, 200, 91, 0.9);
 }
 
 #why {
-  background: #7f7cc7;
-  background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(127, 124, 199, 0.9);
+  background: #a2a0d6;
+  background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(162, 160, 214, 0.9);
 }
 
 #photoflashmob {
@@ -178,7 +178,7 @@ footer ul {
   list-style: square;
 }
 footer a {
-  color: #a29db8;
+  color: #a39eb8;
 }
 
 /* Modules */
@@ -199,13 +199,13 @@ footer a {
   -moz-border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
   border-radius: 0.2em;
-  background: #86a136;
-  background: rgba(134, 161, 54, 0.8);
+  background: #adc85b;
+  background: rgba(173, 200, 91, 0.8);
   color: white;
   position: relative;
 }
 .button:hover {
-  background-color: rgba(163, 194, 72, 0.8);
+  background-color: rgba(192, 213, 130, 0.8);
 }
 
 #share #support {
