@@ -108,6 +108,9 @@ section > div, footer > div {
 section:not(#intro), footer {
   border-top: 3px solid rgba(255, 255, 255, 0.6);
 }
+section:not(#intro) p, footer p {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
 
 #intro {
   padding: 2em;
