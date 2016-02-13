@@ -64,7 +64,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
   font-family: Tahoma, "DejaVu Sans Condensed", sans-serif;
   font-size: 14pt;
-  text-align: center;
   background: url('../img/1280px-Old-castle.jpg?1421800589') top center no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -122,6 +121,7 @@ section:not(#intro), footer {
 
 #intro, #share {
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
 #whatisit {
