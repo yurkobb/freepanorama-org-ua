@@ -100,16 +100,6 @@ $blocktransparency: 0.1;
     background: $why-color; // For dumb browsers
     background: image-url('icon4.png') 0 -60px no-repeat transparentize($why-color, $blocktransparency);
 }
-#photoflashmob {
-    $flashmob-color: $colorA;
-    background: $flashmob-color; // For dumb browsers
-    background: transparentize($flashmob-color, $blocktransparency);
-    /* When inside the popup */
-    .mfp-content & {
-        $flashmob-color: lighten($flashmob-color, 10%);
-        background: transparentize($flashmob-color, 0.15);
-    }
-}
 #share {
     background-color: transparentize(black, 0.75);
     padding-top: 3em;
@@ -168,9 +158,6 @@ footer {
 #share-link {
     @include button(transparentize(lighten($colorD, 25%), 0.2));
 }
-.button.photoflashmob {
-    @include button(transparentize(#d44, 0.2));
-}
 .illustration {
     margin: 0.25em;
     //max-width: 100%;
@@ -196,11 +183,4 @@ footer {
         float: right;
         max-width: 300px;
     }
-}
-
-/* Plugins */
-/* Magnific Popup */
-@import url("magnific-popup.css");
-.mfp-content {
-    max-width: 1024px;
 }
