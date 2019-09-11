@@ -75,14 +75,19 @@ img {
   max-width: 100%;
 }
 
-.no-background-size body {
-  background: #01a1df;
+h1, h2 {
+  padding: 0.5em 0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 180%;
+  color: white;
 }
 
 h2 {
   font-size: 165%;
-  padding: 0.5em 0;
-  color: white;
+  color: #017cac;
 }
 
 p {
@@ -101,10 +106,11 @@ section > div, footer > div {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0.25em;
+  padding: 1rem 0.25em;
 }
 
-section:not(#intro), footer {
+section:not(#intro):not(#share), footer {
+  margin-top: 4rem;
   border-top: 3px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -128,32 +134,35 @@ section:not(#intro) p {
 }
 
 #whatisit {
-  background: #adc85b;
-  background: url('../img/icon1.png?1421628174') 0 -60px no-repeat rgba(173, 200, 91, 0.9);
+  background: white;
+  background: url('../img/icon1.png?1421628174') 0 -60px no-repeat rgba(255, 255, 255, 0.8);
 }
 
 #nofop {
-  background: #c280b0;
-  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(194, 128, 176, 0.9);
+  background: white;
+  background: url('../img/icon2.png?1421628175') 0 -60px no-repeat rgba(255, 255, 255, 0.8);
 }
 
 #wepropose {
-  background: #adc85b;
-  background: url('../img/icon3.png?1421628175') 0 -60px no-repeat rgba(173, 200, 91, 0.9);
+  background: white;
+  background: url('../img/icon3.png?1421628175') 0 -60px no-repeat rgba(255, 255, 255, 0.8);
 }
 
 #why {
-  background: #a2a0d6;
-  background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(162, 160, 214, 0.9);
+  background: white;
+  background: url('../img/icon4.png?1421628176') 0 -60px no-repeat rgba(255, 255, 255, 0.8);
 }
 
 #share {
-  background-color: rgba(0, 0, 0, 0.25);
   padding-top: 3em;
   padding-bottom: 300px;
+  border-top: none;
 }
 #share p {
   padding: 1em 0 6em 0;
+}
+#share h2 {
+  color: white;
 }
 
 footer {
@@ -169,7 +178,7 @@ footer ul {
   list-style: square;
 }
 footer a {
-  color: #a39eb8;
+  color: #15bdfe;
 }
 
 /* Modules */
@@ -183,6 +192,11 @@ footer a {
   font-weight: normal;
 }
 
+.changes-needed {
+  background: #aa4;
+  padding: 0.5em;
+}
+
 .button {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -190,13 +204,13 @@ footer a {
   -moz-border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
   border-radius: 0.2em;
-  background: #adc85b;
-  background: rgba(173, 200, 91, 0.8);
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
   color: white;
   position: relative;
 }
 .button:hover {
-  background-color: rgba(192, 213, 130, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #share #support {
@@ -210,17 +224,19 @@ footer a {
   -moz-border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
   border-radius: 0.2em;
-  background: #6e6abf;
-  background: rgba(110, 106, 191, 0.8);
+  background: #61d2fe;
+  background: rgba(97, 210, 254, 0.8);
   color: white;
   position: relative;
 }
 #share-link:hover {
-  background-color: rgba(145, 142, 207, 0.8);
+  background-color: rgba(148, 225, 255, 0.8);
 }
 
 .illustration {
   margin: 0.25em;
+  margin-top: -3rem;
+  margin-right: 2rem;
   display: block;
   -moz-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);

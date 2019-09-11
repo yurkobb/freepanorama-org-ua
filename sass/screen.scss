@@ -7,14 +7,13 @@
 @import "compass/css3";
 @import "compass/support";
 
-$browser-minimum-versions: (ie: "8");
+$browser-minimum-versions: (ie: "10");
 
 /* Palette */
-$colorA: lighten(#86A136, 15%);
-$colorB: desaturate(lighten(#7F2A68, 30%), 15%);
-$colorC: lighten(#867FA2, 0.4);
-$colorD: #363377;
-$colorE: #01a1df;
+$colorA: white;
+$colorB: #01a1df;
+$colorC: #8ad447;
+$colorD: #945089;
 
 /* Defaults */
 body {
@@ -28,15 +27,17 @@ body {
 img {
     max-width: 100%;
 }
-.no-background-size body {
-    // Без «розтягуваного» тла робимо просто колір
-    background: $colorE;
+h1, h2 {
+    padding: 0.5em 0;
+    font-weight: bold;
 }
-
+h1 {
+    font-size: 180%;
+    color: white;
+}
 h2 {
     font-size: 165%;
-    padding: 0.5em 0;
-    color: white;
+    color: darken($colorB, 10%);
 }
 p {
     padding: 0.5em 0;
@@ -44,7 +45,7 @@ p {
 }
 
 a {
-    color: darken($colorE, 25%);
+    color: darken($colorB, 25%);
     font-weight: bold;
     text-decoration: none;
 }
@@ -54,9 +55,10 @@ section > div, footer > div {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0.25em;
+    padding: 1rem 0.25em;
 }
-section:not(#intro), footer {
+section:not(#intro):not(#share), footer {
+    margin-top: 4rem;
     border-top: 3px solid transparentize(white, 0.4);
 }
 section:not(#intro) p {
@@ -64,13 +66,10 @@ section:not(#intro) p {
 }
 
 #intro {
-    //background: transparentize(black, 0.7);
     padding: 2em;
     font-size: 18pt;
     color: white;
     min-height: 4em;
-//    background: url('http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Berlin_Panorama_%288324921866%29.jpg/1280px-Berlin_Panorama_%288324921866%29.jpg') center 100% no-repeat;
-    //text-shadow: 1px 1px 0 black;
     a {
         color: white;
     }
@@ -80,32 +79,32 @@ section:not(#intro) p {
     text-align: center;
 }
 
-$blocktransparency: 0.1;
+$blocktransparency: 0.2;
 #whatisit {
-    //background-color: transparentize(lighten($colorB, 15%), 0.2);
     background: $colorA; // For dumb browsers
     background: image-url('icon1.png') 0 -60px no-repeat transparentize($colorA, $blocktransparency);
 }
 #nofop {
-    background: $colorB; // For dumb browsers
-    background: image-url('icon2.png') 0 -60px no-repeat transparentize($colorB, $blocktransparency);
+    background: $colorA; // For dumb browsers
+    background: image-url('icon2.png') 0 -60px no-repeat transparentize($colorA, $blocktransparency);
 }
 #wepropose {
-    $wepropose-color: $colorA;
-    background: $wepropose-color; // For dumb browsers
-    background: image-url('icon3.png') 0 -60px no-repeat transparentize($wepropose-color, $blocktransparency);
+    background: $colorA; // For dumb browsers
+    background: image-url('icon3.png') 0 -60px no-repeat transparentize($colorA, $blocktransparency);
 }
 #why {
-    $why-color: lighten($colorD, 40%);
-    background: $why-color; // For dumb browsers
-    background: image-url('icon4.png') 0 -60px no-repeat transparentize($why-color, $blocktransparency);
+    background: $colorA; // For dumb browsers
+    background: image-url('icon4.png') 0 -60px no-repeat transparentize($colorA, $blocktransparency);
 }
 #share {
-    background-color: transparentize(black, 0.75);
     padding-top: 3em;
     padding-bottom: 300px; // Щоб прокручувалось
+    border-top: none;
     p {
         padding: 1em 0 6em 0;
+    }
+    h2 {
+        color: white;
     }
 }
 footer {
@@ -120,7 +119,7 @@ footer {
         list-style: square;
     }
     a {
-        color: lighten($colorC, 10%);
+        color: lighten($colorB, 10%);
     }
 }
 
@@ -160,10 +159,12 @@ footer {
     }
 }
 #share-link {
-    @include button(transparentize(lighten($colorD, 25%), 0.2));
+    @include button(transparentize(lighten($colorB, 25%), 0.2));
 }
 .illustration {
     margin: 0.25em;
+    margin-top: -3rem;
+    margin-right: 2rem;
     //max-width: 100%;
     display: block;
     @include box-shadow(0 0 12px transparentize(white, 0.5));
