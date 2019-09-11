@@ -16,6 +16,7 @@ $colorC: #8ad447;
 $colorD: #945089;
 
 /* Defaults */
+* { box-sizing: border-box; }
 body {
     font-family: Tahoma, "DejaVu Sans Condensed", sans-serif;
     font-size: 14pt;
@@ -162,12 +163,9 @@ footer {
     @include button(transparentize(lighten($colorB, 25%), 0.2));
 }
 .illustration {
-    margin: 0.25em;
-    margin-top: -3rem;
-    margin-right: 2rem;
-    //max-width: 100%;
+    padding: 0.25em;
+    max-width: 100%;
     display: block;
-    @include box-shadow(0 0 12px transparentize(white, 0.5));
 }
 
 @media screen and (min-width: 480px) {
@@ -186,6 +184,8 @@ footer {
     }
     .illustration {
         float: right;
+        margin-top: -3rem;
+        margin-right: 2rem;
         max-width: 300px;
     }
 }

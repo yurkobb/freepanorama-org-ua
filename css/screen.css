@@ -60,6 +60,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Palette */
 /* Defaults */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Tahoma, "DejaVu Sans Condensed", sans-serif;
   font-size: 14pt;
@@ -234,13 +238,9 @@ footer a {
 }
 
 .illustration {
-  margin: 0.25em;
-  margin-top: -3rem;
-  margin-right: 2rem;
+  padding: 0.25em;
+  max-width: 100%;
   display: block;
-  -moz-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (min-width: 480px) {
@@ -262,6 +262,8 @@ footer a {
 
   .illustration {
     float: right;
+    margin-top: -3rem;
+    margin-right: 2rem;
     max-width: 300px;
   }
 }
